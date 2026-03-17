@@ -1,57 +1,32 @@
-# 🏦 Sistema Bancário CLI em Java
+# 💰 Java Bank CLI
 
-Projeto simples desenvolvido em Java com o objetivo de simular operações bancárias através do terminal.
+Sistema bancário simples via terminal desenvolvido em Java.
 
-## 📌 Funcionalidades
+## 🚀 Funcionalidades
 
-* Criar conta
-* Listar contas
-* Depositar valores
-* Sacar valores
-* Transferir entre contas
+- Criar conta
+- Listar contas
+- Depositar
+- Sacar
+- Transferir valores
 
-## 🛠 Tecnologias utilizadas
+## 🧱 Arquitetura
 
-* Java
-* Programação Orientada a Objetos (POO)
+O projeto foi estruturado em camadas:
 
-## 🚀 Como executar
+- **model** → entidades (Conta)
+- **repository** → armazenamento de dados
+- **service** → regras de negócio
+- **Main** → interface CLI
 
-1. Clone o repositório:
+## 💻 Tecnologias
 
-```
-git clone https://github.com/seu-usuario/nome-do-repo.git
-```
+- Java
+- Programação Orientada a Objetos
+- Arquitetura em camadas
 
-2. Acesse a pasta:
+## ▶️ Como executar
 
-```
-cd nome-do-repo
-```
-
-3. Compile os arquivos:
-
-```
-javac *.java
-```
-
-4. Execute o programa:
-
-```
+```bash
+javac Main.java
 java Main
-```
-
-## 💡 Aprendizados
-
-Este projeto foi desenvolvido para praticar:
-
-* Estrutura de classes
-* Encapsulamento
-* Lógica de programação
-* Manipulação de listas (ArrayList)
-
-## 📈 Melhorias futuras
-
-* Persistência de dados em arquivo
-* Interface gráfica
-* API com Spring Boot
