@@ -1,3 +1,4 @@
+package model; //sempre que usar em outro arquivo vou precisar importar
 public class Conta {
 
     private String titular; // usamos private para encapsular dados
