@@ -15,7 +15,7 @@ public class Main {
         ContaRepository repository = new ContaRepository();
         BancoService service = new BancoService(repository);
 
-        Menu menu = new Menu(service); // 👈 usando o import
+        Menu menu = new Menu(service); // usando o import
         menu.iniciar();
 
         int opcao;
@@ -45,9 +45,9 @@ public class Main {
                     boolean criada = service.criarConta(nome, numero);
 
                     if (criada) {
-                        System.out.println("✔ Conta criada com sucesso!");
+                        System.out.println(" Conta criada com sucesso!");
                     } else {
-                        System.out.println("❌ Conta já existe!");
+                        System.out.println(" Conta já existe!");
                     }
                     break;
 
@@ -71,9 +71,9 @@ public class Main {
                     boolean deposito = service.depositar(contaDep, valorDep);
 
                     if (deposito) {
-                        System.out.println("✔ Depósito realizado!");
+                        System.out.println(" Depósito realizado!");
                     } else {
-                        System.out.println("❌ Erro no depósito!");
+                        System.out.println(" Erro no depósito!");
                     }
                     break;
 
@@ -87,9 +87,9 @@ public class Main {
                     boolean saque = service.sacar(contaSaque, valorSaque);
 
                     if (saque) {
-                        System.out.println("✔ Saque realizado!");
+                        System.out.println("Saque realizado!");
                     } else {
-                        System.out.println("❌ Saldo insuficiente ou conta inválida!");
+                        System.out.println("Saldo insuficiente ou conta inválida!");
                     }
                     break;
 
@@ -106,9 +106,9 @@ public class Main {
                     boolean transferencia = service.transferir(origem, destino, valorTransf);
 
                     if (transferencia) {
-                        System.out.println("✔ Transferência realizada!");
+                        System.out.println(" Transferência realizada!");
                     } else {
-                        System.out.println("❌ Erro na transferência!");
+                        System.out.println(" Erro na transferência!");
                     }
                     break;
             }
