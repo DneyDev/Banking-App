@@ -3,6 +3,7 @@ import java.util.Scanner;
 import model.Conta;
 import repository.ContaRepository;
 import service.BancoService;
+import ui.Menu;
 
 public class Main {
 
@@ -13,6 +14,9 @@ public class Main {
         // 🔗 ligando as camadas
         ContaRepository repository = new ContaRepository();
         BancoService service = new BancoService(repository);
+
+        Menu menu = new Menu(service); // 👈 usando o import
+        menu.iniciar();
 
         int opcao;
 

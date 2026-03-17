@@ -1,5 +1,7 @@
 package service;
 
+import java.util.List;
+
 import model.Conta;
 import repository.ContaRepository;
 
@@ -60,5 +62,8 @@ public class BancoService {
         }
         depositar(destino, valor);
         return true;
+    }
+    public List<Conta> listarContas() {
+        return repository.listarContas();
     }
 }
