@@ -30,3 +30,19 @@ O projeto foi estruturado em camadas:
 ```bash
 javac Main.java
 java Main
+```
+
+## 💡 Aprendizados
+
+Este projeto foi desenvolvido para praticar:
+
+* Estrutura de classes
+* Encapsulamento
+* Lógica de programação
+* Manipulação de listas (ArrayList)
+
+## 📈 Melhorias futuras
+
+* Persistência de dados em arquivo
+* Interface gráfica
+* API com Spring Boot
